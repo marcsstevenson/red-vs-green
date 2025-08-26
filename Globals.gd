@@ -1,15 +1,15 @@
 # Globals.gd
 
 const RED_SPEED = 100
-const GREEN_SPEED = 80
-const RED_VISION = 50
-const GREEN_VISION = 30
+const GREEN_SPEED = 90
+const RED_VISION = 90
+const GREEN_VISION = 40
 const SPAWN_DISTANCE = 12
 const EAT_DISTANCE = 10  # Distance at which red dots can eat green dots (touching)
-const RED_REPRODUCE_DELAY = 4
-const GREEN_LIFESPAN = 10
+const RED_REPRODUCE_DELAY = 5
+const GREEN_LIFESPAN = 15
 const WANDER_AMOUNT = 15
-const RED_STARVATION_TIME = 20.0  # Red dots starve after 5 seconds without eating
+const RED_STARVATION_TIME = 15.0  # Red dots starve after 5 seconds without eating
 
 # Performance optimization constants
 const TARGET_SEARCH_INTERVAL = 0.15  # Search for targets every 0.15 seconds instead of every frame

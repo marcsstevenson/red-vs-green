@@ -6,8 +6,8 @@ const GREEN_DOT_SCENE = preload("res://green_dot.tscn")
 const Globals = preload("res://Globals.gd")
 
 func spawn_agents():
-	var num_reds = 10		# How many to start with
-	var num_greens = 30	 # How many to start with
+	var num_reds = 15		# How many to start with
+	var num_greens = 20	 # How many to start with
 	var screen_size = get_viewport().get_visible_rect().size
 
 	# Initialize spatial partitioning system
@@ -32,5 +32,4 @@ func spawn_agents():
 		# (GreenDot script should already add itself to the "greens" group in _ready())
 
 func _ready():
-	randomize()  # Ensures randomness each time the scene runs
 	spawn_agents()
